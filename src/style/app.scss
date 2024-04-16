@@ -1,0 +1,103 @@
+$link-color: #333;
+$divide-line-color: #000;
+$table-border-color: #999;
+
+.content-wrapper {
+  width: 100%;
+  font-family: "Times New Roman", Times, serif;
+  .content {
+    position: relative;
+    font-size: 0.14rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #fff;
+    border-radius: 0.02rem;
+    padding: 0.25rem;
+    @media print {
+      box-shadow: none;
+      padding-bottom: 0;
+    }
+    @media only screen and (min-width: 960px) {
+      width: 800px;
+      margin: 40px auto;
+    }
+    @media only screen and (max-width: 959px) {
+      box-shadow: none;
+    }
+    .head {
+      .title {
+        text-align: center;
+        font-size: 0.18rem;
+        font-weight: bold;
+      }
+      .print-btn {
+        position: absolute;
+        top: 0.1rem;
+        right: 0.1rem;
+        user-select: none;
+        text-decoration: underline;
+        color: $link-color;
+        cursor: pointer;
+        display: none;
+        box-sizing: border-box;
+        padding: 0 0.04rem;
+        @media only screen and (min-width: 960px) {
+          display: block;
+        }
+      }
+    }
+    .body {
+      .section {
+        margin-top: 0.15rem;
+        padding-bottom: 0.25rem;
+        border-bottom: solid 2px $divide-line-color;
+        &:last-child{
+          border-bottom: none;
+        }
+        .title {
+          font-size: 0.14rem;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          .add-row-btn{
+            font-weight: normal;
+            font-size: 0.12rem;
+            margin-left: 0.12rem;
+            cursor: pointer;
+          }
+        }
+        .info-table {
+          margin-top: 0.15rem;
+          width: 100%;
+          border: solid 1px $table-border-color;
+          border-collapse: collapse;
+          td {
+            border: solid 1px $table-border-color;
+            &:first-child{
+              width: 32%;
+            }
+            padding: 0.1rem;
+            white-space: pre-wrap;
+            outline: none;
+            position: relative;
+            .delete-btn{
+              position: absolute;
+              right: 0;
+              top: 50%;
+              transform: translate(50%, -50%);
+              opacity: 0;
+              width: 0.4rem;
+              height: 0.4rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              cursor: pointer;
+              &:hover{
+                opacity: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
