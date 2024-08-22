@@ -1,6 +1,6 @@
 # table-resume
 Create a table resume for APS.
-<br>生成 APS 审核用的表格简历。
+<br>生成表格简历。
 ![](https://github.com/LynanBreeze/table-resume/blob/main/preview.jpg?raw=true)
 
 ## Edit 编辑
