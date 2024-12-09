@@ -1,5 +1,5 @@
 # table-resume
-Create a table resume for APS.
+Create a table resume.
 <br>生成表格简历。
 ![](https://github.com/LynanBreeze/table-resume/blob/main/preview.jpg?raw=true)
 
